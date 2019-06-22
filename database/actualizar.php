@@ -57,7 +57,7 @@ if (isset($_POST['actualizar'])) {
         // print_r($row2);
 
         ?>
-        <div class="container p-4">
+        <div class="container m-5 p-4">
             <!-- MESSAGES -->
 
 
@@ -107,7 +107,7 @@ if (isset($_POST['actualizar'])) {
 
 
 
-<div class="row bg-gradient-primary">
+<div class="row m-5 p-3">
     <div class=" col-md-4 mx-auto my-auto">
         <div class="card card-body bg-info">
             <form action="actualizar.php?id=<?php echo $_GET['id']; ?>" method="POST" enctype="multipart/form-data">
@@ -123,7 +123,7 @@ if (isset($_POST['actualizar'])) {
                         <input class="form-control mb-3" type="email" name="email" placeholder="email" value="<?php echo $email; ?>">
                     </div>
                     <div class="form-group">
-                        <input class="form-control mb-3" type="text" name="password" placeholder="password" value="<?php echo $password; ?>">
+                        <input class="form-control mb-3" type="password" name="password" placeholder="password" value="<?php echo $password; ?>">
                     </div>
                     <div class="form-group">
                         <input class="form-control mb-3" type="date" name="fechanacimiento" placeholder="fechanacimiento" value="<?php echo date('Y-m-d', strtotime($fechanacimiento)); ?>">

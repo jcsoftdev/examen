@@ -10,6 +10,9 @@
   <script src="https://kit.fontawesome.com/bb3057e168.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
   <style>
+    body{
+      /* overflow:hidden; */
+    }
     * {
       font-family: Oswald, Arial, Helvetica, sans-serif;
     }
@@ -21,14 +24,14 @@
     .titulo {
       font-size: 1.5rem;
     }
-
+/* 
     .row{
       width: 100vw;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-    }
+    } */
   </style>
 </head>
 
