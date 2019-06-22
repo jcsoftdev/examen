@@ -31,22 +31,20 @@ SET time_zone = "+00:00";
 CREATE TABLE `usuario` (
   `id` int(11) NOT NULL,
   `usuario_rol_id` int(11) NOT NULL,
-  `nickName` varchar(50) COLLATE utf8_unicode_520_ci NOT NULL,
+  `nickName` varchar(50) COLLATE utf8_spanish2_ci NOT NULL,
   `nombreApellido` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `Email` varchar(150) COLLATE utf8_unicode_520_ci NOT NULL,
-  `password` varchar(100) COLLATE utf8_unicode_520_ci NOT NULL,
+  `Email` varchar(150) COLLATE utf8_spanish2_ci NOT NULL,
+  `password` varchar(100) COLLATE utf8_spanish2_ci NOT NULL,
   `fechanacimiento` datetime NOT NULL,
   `fechaCreacion` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `estadofecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `usuario_estado_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_520_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
 --
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`id`, `usuario_rol_id`, `nickName`, `nombreApellido`, `Email`, `password`, `fechanacimiento`, `fechaCreacion`, `estadofecha`, `usuario_estado_id`) VALUES
-(5, 1, 'jcsoftia', 'dew', 'ajcarlos032@gmail.com', 'jk2wghwdk', '2019-06-13 00:00:00', '2019-06-21 19:07:08', '2019-06-21 19:07:08', 1);
 
 -- --------------------------------------------------------
 
@@ -57,8 +55,8 @@ INSERT INTO `usuario` (`id`, `usuario_rol_id`, `nickName`, `nombreApellido`, `Em
 CREATE TABLE `usuario_estado` (
   `id` int(11) NOT NULL,
   `estadoLeyenda` int(11) NOT NULL,
-  `estadoValor` varchar(100) COLLATE utf8_unicode_520_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_520_ci;
+  `estadoValor` varchar(100) COLLATE utf8_spanish2_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
 --
 -- Volcado de datos para la tabla `usuario_estado`
@@ -77,9 +75,9 @@ INSERT INTO `usuario_estado` (`id`, `estadoLeyenda`, `estadoValor`) VALUES
 CREATE TABLE `usuario_rol` (
   `id` int(11) NOT NULL,
   `privilegioNivel` int(11) NOT NULL,
-  `privilegioLeyenda` varchar(100) COLLATE utf8_unicode_520_ci NOT NULL,
-  `privilegioDescripcion` varchar(200) COLLATE utf8_unicode_520_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_520_ci;
+  `privilegioLeyenda` varchar(100) COLLATE utf8_spanish2_ci NOT NULL,
+  `privilegioDescripcion` varchar(200) COLLATE utf8_spanish2_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
 --
 -- Volcado de datos para la tabla `usuario_rol`
